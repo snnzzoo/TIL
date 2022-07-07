@@ -20,7 +20,7 @@
 |   Date   |                             TIL                              |
 | :------: | :----------------------------------------------------------: |
 | 07.04.22 |                              OT                              |
-| 07.05.22 | [Markdown](https://github.com/snnzzoo/TIL/blob/master/220705/markdown_selfstudy.md) |
+| 07.05.22 | [Markdown](https://github.com/snnzzoo/TIL/blob/master/220705/Markdown_selfstudy.md) |
 | 07.06.22 | [Git/GitHub](https://github.com/snnzzoo/TIL/tree/master/220706) |
 | 07.07.22 |                                                              |
 | 07.08.22 |                                                              |
