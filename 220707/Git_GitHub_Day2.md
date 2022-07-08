@@ -66,7 +66,7 @@ $ git clone <repository 주소>
 
 - Git을 활영하여 협업하는 흐름으로 branch를 활용하는 전략을 의미한다.
 
-<img src="GitHub_Day2.assets/git-model@2x.png" style="zoom: 50%;" />
+![img](Git_GitHub_Day2.assets/vlan.png)
 
 | branch                        | 주요 특징                                                    | 예시                                               |
 | ----------------------------- | ------------------------------------------------------------ | -------------------------------------------------- |
