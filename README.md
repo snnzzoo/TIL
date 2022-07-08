@@ -21,7 +21,7 @@
 | :------: | :----------------------------------------------------------: |
 | 07.04.22 |                              OT                              |
 | 07.05.22 | [Markdown](https://github.com/snnzzoo/TIL/blob/master/220705/Markdown_selfstudy.md) |
-| 07.06.22 | [Git/GitHub](https://github.com/snnzzoo/TIL/tree/master/220706) |
-| 07.07.22 | [Git/GitHub_Day_2](https://github.com/snnzzoo/TIL/blob/master/220707/Git.GitHub_Day2.md) |
+| 07.06.22 | [Git](https://github.com/snnzzoo/TIL/blob/master/220706/Git_selfstudy.md) [GitHub](https://github.com/snnzzoo/TIL/blob/master/220706/GitHub_selfstudy.md) |
+| 07.07.22 | [Git/GitHub_Day_2](https://github.com/snnzzoo/TIL/blob/master/220707/Git_GitHub_Day2.md) |
 | 07.08.22 |                                                              |
 
