@@ -185,6 +185,8 @@ Merge made by the 'recursive' strategy.
 
 - Shared repository model (저장소의 소유권이 **있는** 경우)
 
+![img](https://velog.velcdn.com/images/drata313/post/f13d0d75-b059-451a-87fe-5edab6a6a90f/image.png)
+
 1. 각 사용자는 원격저장소의 소유권을 가진 상태. 따라서 **clone**을 통해 저장소를 로컬에 복제
 2. 기능 추가를 위해 branch 생성 및 기능 구현
 3. 기능 구현 후 원격저장소에 branch 반영
@@ -199,6 +201,8 @@ Merge made by the 'recursive' strategy.
 ### 2. Forking Workflow
 
 - Fork & Pull model (저장소의 소유권이 **없는** 경우)
+
+![img](https://velog.velcdn.com/images/drata313/post/eb07867f-f881-4d15-bea1-aea9a30cd2d1/image.png)
 
 1. 소유권이 없는 원격저장소를 fork를 통해 복제
 2. 로컬저장소를 원본 원격저장소와 동기화하기 위해 URL을 연결
