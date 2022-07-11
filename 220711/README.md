@@ -4,6 +4,8 @@
 
 # Python
 
+![img](README.assets/236C3E4258EF738C30.png)
+
 - 컴퓨터 프로그래밍 언어 중 하나
 
   - 컴퓨터(Computer): Caculation + Remember
