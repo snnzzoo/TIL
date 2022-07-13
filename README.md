@@ -33,6 +33,6 @@
 | :------: | :----------------------------------------------------------: |
 | 07.11.22 | [Python](https://github.com/snnzzoo/TIL/tree/master/220711)  |
 | 07.12.22 | [Python Day 2](https://github.com/snnzzoo/TIL/tree/master/220712) |
-| 07.13.22 |                                                              |
+| 07.13.22 | [Python Day 3](https://github.com/snnzzoo/TIL/tree/master/220713) |
 | 07.14.22 |                                                              |
 | 07.15.22 |                                                              |
