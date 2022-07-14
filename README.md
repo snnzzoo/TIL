@@ -17,22 +17,34 @@
 
 ### 📓 7월 1주차
 
-|   Date   |                             TIL                              |
-| :------: | :----------------------------------------------------------: |
-| 07.04.22 |                              OT                              |
-| 07.05.22 | [Markdown](https://github.com/snnzzoo/TIL/blob/master/220705/Markdown_selfstudy.md) |
-| 07.06.22 | [Git](https://github.com/snnzzoo/TIL/blob/master/220706/Git_selfstudy.md) [GitHub](https://github.com/snnzzoo/TIL/blob/master/220706/GitHub_selfstudy.md) |
-| 07.07.22 | [Git/GitHub_Day_2](https://github.com/snnzzoo/TIL/blob/master/220707/Git_GitHub_Day2.md) |
-| 07.08.22 |                          취업 특강                           |
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 07.04 |                              OT                              |
+| 07.05 | [Markdown](https://github.com/snnzzoo/TIL/blob/master/220705/Markdown_selfstudy.md) |
+| 07.06 | [Git](https://github.com/snnzzoo/TIL/blob/master/220706/Git_selfstudy.md) [GitHub](https://github.com/snnzzoo/TIL/blob/master/220706/GitHub_selfstudy.md) |
+| 07.07 | [Git/GitHub_Day_2](https://github.com/snnzzoo/TIL/blob/master/220707/Git_GitHub_Day2.md) |
+| 07.08 |                          취업 특강                           |
 
 
 
 ### 📓 7월 2주차
 
-|   Date   |                             TIL                              |
-| :------: | :----------------------------------------------------------: |
-| 07.11.22 | [Python](https://github.com/snnzzoo/TIL/tree/master/220711)  |
-| 07.12.22 | [Python Day 2](https://github.com/snnzzoo/TIL/tree/master/220712) |
-| 07.13.22 | [Python Day 3](https://github.com/snnzzoo/TIL/tree/master/220713) |
-| 07.14.22 |                                                              |
-| 07.15.22 |                                                              |
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 07.11 | [Python](https://github.com/snnzzoo/TIL/tree/master/220711)  |
+| 07.12 | [Python Day 2](https://github.com/snnzzoo/TIL/tree/master/220712) |
+| 07.13 | [Python Day 3](https://github.com/snnzzoo/TIL/tree/master/220713) |
+| 07.14 | [Python Day 4](https://github.com/snnzzoo/TIL/tree/master/220714)                                                             |
+| 07.15 |                                                              |
+
+
+
+### 📓 7월 3주차
+
+| Date  | TIL  |
+| :---: | :--: |
+| 07.18 |      |
+| 07.19 |      |
+| 07.20 |      |
+| 07.21 |      |
+| 07.22 |      |
