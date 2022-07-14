@@ -1,5 +1,4 @@
 # 방법1. for
-from tkinter import N
 
 
 word = 'apple'
@@ -23,7 +22,8 @@ for i in range(len(word)):
 
 
 # sep
-# 여러 개를 동시에 출력할 떄 사이에 구분값
+# 여러 개를 동시에 출력할 때 사이에 구분값
+
 # end (기본값 : '\n')
 # print 출력이 된 이후 뒤에 뭐를 붙일 지!
 print(1, end='수업끝~')
