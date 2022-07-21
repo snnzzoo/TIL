@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("SWEA 문제풀이/2050_input.txt", "r")
+sys.stdin = open("220720/SWEA 문제풀이/2050_input.txt", "r")
 
 data = input()
 

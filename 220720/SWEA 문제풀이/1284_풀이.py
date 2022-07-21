@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('SWEA 문제풀이/1284_input.txt', 'r')
+sys.stdin = open('220720/SWEA 문제풀이/1284_input.txt', 'r')
 
 # A사 : 1L * P원
 # B사 :

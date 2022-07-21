@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("SWEA 문제풀이/2019_input.txt", "r")
+sys.stdin = open("220720/SWEA 문제풀이/2019_input.txt", "r")
 
 N = int(input())
 result = 0

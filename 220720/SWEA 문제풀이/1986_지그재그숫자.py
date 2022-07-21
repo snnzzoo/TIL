@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("SWEA 문제풀이/1986_input.txt", "r")
+sys.stdin = open("220720/SWEA 문제풀이/1986_input.txt", "r")
 
 T = int(input())
 for test_case in range(1, T + 1):
