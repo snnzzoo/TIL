@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open("2029_input.txt", "r")
+sys.stdin = open("220719/SWEA 문제풀이/2029_input.txt", "r")
 
 t = int(input())
 for i in range(1, t+1):
