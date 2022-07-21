@@ -46,5 +46,5 @@
 | 07.18 | [Python Day 6](https://github.com/snnzzoo/TIL/tree/master/220718) |
 | 07.19 | [Python Day 7](https://github.com/snnzzoo/TIL/tree/master/220719) |
 | 07.20 | [Python Day 8](https://github.com/snnzzoo/TIL/tree/master/220720)                        |
-| 07.21 | [Python Day 9]                                                             |
+| 07.21 | [Python Day 9](https://github.com/snnzzoo/TIL/tree/master/220721)                                                             |
 | 07.22 |                                                              |
