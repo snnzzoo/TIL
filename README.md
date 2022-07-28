@@ -57,7 +57,7 @@
 | :---: | ------------------------------------------------------------ |
 | 07.25 | [Algorithm](https://github.com/snnzzoo/TIL/tree/master/220725) |
 | 07.26 | [시간복잡도 & 빅오 표기법](https://github.com/snnzzoo/TIL/tree/master/220726), [리스트(List)](https://github.com/snnzzoo/TIL/blob/master/220726/%EB%A6%AC%EC%8A%A4%ED%8A%B8(List).md) |
-| 07.27 | [문자열(String)](https://github.com/snnzzoo/TIL/tree/master/220727) |
-| 07.28 |                                                              |
+| 07.27 | [문자열 (String)](https://github.com/snnzzoo/TIL/tree/master/220727) |
+| 07.28 | [딕셔너리 (Dictionary)](https://github.com/snnzzoo/TIL/tree/master/220728) |
 | 07.29 |                                                              |
 
