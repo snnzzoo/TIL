@@ -1,6 +1,6 @@
 ###### 7월 7일
 
-# Git/GitHub 2일차
+# Git & GitHub Day 2
 
 
 
