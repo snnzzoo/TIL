@@ -1,0 +1,6 @@
+(출력)first array
+3 6 9
+8 5 2
+(출력)second array
+9 8 7
+6 5 4
