@@ -1,6 +1,6 @@
 # Markdown
 
-![img](markdown_selfstudy.assets/markdown.png)
+![img](README.assets/markdown.png)
 
 ## 장점
 
