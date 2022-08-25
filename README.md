@@ -112,5 +112,5 @@
 | 08.22 | [Join](https://github.com/snnzzoo/TIL/tree/master/DB/220822) |
 | 08.23 | [모델링](https://github.com/snnzzoo/TIL/tree/master/DB/220823) |
 | 08.24 | [ORM](https://github.com/snnzzoo/TIL/tree/master/DB/220824)  |
-| 08.25 |                                                              |
+| 08.25 | [QuerySet API](https://github.com/snnzzoo/TIL/tree/master/DB/220825) |
 | 08.26 |                                                              |
