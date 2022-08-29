@@ -50,7 +50,7 @@
 
 
 
-🌴 [HTML의 메타데이터 정리]()
+🌴 [HTML의 메타데이터 정리](https://github.com/snnzzoo/TIL/blob/master/Web/220829/HTML%20%EB%A9%94%ED%83%80%EB%8D%B0%EC%9D%B4%ED%84%B0.md)
 
 
 
