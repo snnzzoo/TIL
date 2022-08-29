@@ -114,3 +114,16 @@
 | 08.24 | [ORM](https://github.com/snnzzoo/TIL/tree/master/DB/220824)  |
 | 08.25 | [QuerySet API](https://github.com/snnzzoo/TIL/tree/master/DB/220825) |
 | 08.26 |                                                              |
+
+
+
+### 📓 8월 5주차
+
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 08.29 | [Web Day 1_HTML & CSS](https://github.com/snnzzoo/TIL/tree/master/Web/220829) |
+| 08.30 |                                                              |
+| 08.31 |                                                              |
+
+
+
