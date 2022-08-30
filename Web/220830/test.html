@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .font-big {
+    font-size: 36px;
+    }
+    .em {
+    font-size: 2em;
+    }
+    .rem {
+    font-size: 2rem;
+    }
+    h1 {
+      color : black;
+      background-color: pink;
+    }
+    .px {
+      width: 200px;
+    }
+    .vw {
+      width: 50vw;
+    }
+    p {
+      /* 상속됨 */
+      color: red;
+      /* 상속 안됨 */
+      border: 3px solid black;
+    }
+    span {
+    }
+    .box1 {
+      width: 500px;
+      border-width: 2px;
+      border-color: black;
+      border-style: dashed;
+      padding-left: 50px;
+      margin-bottom: 30px;
+    }
+    .box2 {
+      width: 500px;
+      border: 2px solid black;
+      padding: 20px 30px;
+    }
+    .box {
+      width: 100px;
+      margin: 10px auto;
+      padding: 20px;
+      border: 1px solid black;
+      color: white;
+      text-align: center;
+      background-color: blueviolet;
+    }
+    .box-sizing {
+      box-sizing: border-box;
+      margin-top: 50px;
+    }
+    </style>
+</head>
+<body>
+  <ul class="font-big">
+    <li class="em">2em</li>
+    <li class="rem">2rem</li>
+    <li>no class</li>
+    </ul>
+    <h1 class="px">px 사용</h1>
+    <h1 class="vw">vw 사용</h1>
+    <!-- 상속 테스트 -->
+    <p>안녕하세요! <span>테스트</span> 입니다.</p>
+    <!-- box model -->
+    <div class="box1">div</div>
+    <div class="box2">div</div>
+    <div class="box">content-box</div>
+    <div class="box box-sizing">border-box</div>
+</body>
+</html>
