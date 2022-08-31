@@ -123,7 +123,7 @@
 | :---: | :----------------------------------------------------------: |
 | 08.29 | [Web Day 1 - HTML & CSS](https://github.com/snnzzoo/TIL/tree/master/Web/220829) |
 | 08.30 | [CSS 기초](https://github.com/snnzzoo/TIL/tree/master/Web/220830) |
-| 08.31 |                                                              |
+| 08.31 | [CSS Position & Layout](https://github.com/snnzzoo/TIL/tree/master/Web/220831) |
 
 
 
