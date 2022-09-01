@@ -1,0 +1,32 @@
+/* 아래에 CSS를 작성해주세요. */
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+}
+.upper-title {
+  display: block;
+  font-size: 12px;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  width: 900px;
+  height: 500px;
+}
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 10px;
+}
+.card-image {
+  width: 100%;
+  border-radius: 5%;
+}
+
+.upper-subtitle {
+  font-weight: bold;
+  color: rgb(180, 180, 180);
+}
