@@ -9,57 +9,68 @@
   <title>HPHK APPAREL</title>
 </head>
 <body>
-  <nav class="nav">
-    <h1 class="logo">APPAREL SHOP</h1>
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">HOME</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="products.html">PRODUCTS</a>
-      </li>
-    </ul>
-  </nav>
-  <div class="main">
-    <div class="banner"></div>
-    <div class="container">
-      <div class="about">
-        <div class="about-img-wrapper">
-          <img class="about-img" src="./assets/apparel2.jpeg">
-          <h4>Best of This Week</h4>
-        </div>
+  <!-- Nav Bar -->
+  <!-- nav>h1+ul>(li>a)*2 -->
+  <section class="container">
+    <nav class="nav">
+      <h1 class="logo">APPAREL SHOP</h1>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">PRODUCTS</a>
+        </li>
+      </ul>
+    </nav>
+  <!-- 배너 영역 -->
+    <section class="banner">
+      <div class="banner-title">Happy Week</div>
+      <p class="banner-text">추석 연휴 Event</p>
+    </section>
+    <!-- 본문 영역 -->
+    <!-- about -->
+    <section class="about">
+      <div class="about-img-wrapper">
+        <img class="about-img" src="./assets/apparel2.jpeg" alt="모래사장 위의 가방과 신발">
+        <p>Best of This Week</p>
+      </div>
+      <div>
         <div>
-          <h3 class="about-title">About Our Company</h3>
-          <p class="about-text">Lorem ipsum dolo. Laudantium nulla quas quis totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, mollitia recusandae, quas minus quaerat sapiente quos autem magnam incidunt optio esse deleniti reprehenderit vitae exercitationem labore dolor voluptatem temporibus. Minima. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam fuga praesentium, amet corporis veritatis mollitia reprehenderit? Recusandae, nihil! Ipsum deserunt hic consequuntur. Quae repellendus amet omnis harum, vel enim perferendis!</p>
+          <h2 class="about-title">About Our Company</h2>
+          <hr class="title-line">
+        </div>
+        <p class="about-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia ipsum omnis earum nostrum, vitae laudantium vero fuga soluta, odit alias ipsam quae iste at recusandae dolore tempore itaque minus autem eaque fugit error porro, est rem dicta? Iusto tenetur esse molestias veritatis consequuntur earum, fugit laboriosam voluptate accusantium voluptatem adipisci.</p>
+      </div>
+    </section>
+    <!-- more -->
+    <section class="more">
+      <h2 class="more-title">More</h2>
+      <hr class="title-line">
+      <div class="more-list">
+        <div class="more-card">
+          <img class="more-icon" src="./assets/email.png" alt="email">
+          <p>Email Address</p>
+          <p>hphker@hphk.kr</p>
+        </div>
+        <div class="more-card">
+          <img class="more-icon" src="./assets/telephone.png" alt="telephone">
+          <p>Phone Number</p>
+          <p>010-1234-5678</p>
+        </div>
+        <div class="more-card">
+          <img class="more-icon" src="./assets/location.png" alt="location">
+          <p>Location</p>
+          <p>서울특별시</p>
+        </div>
+        <div class="more-card">
+          <img class="more-icon" src="./assets/clock.png" alt="clock">
+          <p>Working Hours</p>
+          <p>9am ~ 6pm</p>
         </div>
       </div>
-      <div class="more">
-        <h2 class="more-title">More</h2>
-        <div class="more-box">
-          <div class="more-card">
-            <img class="more-img" src="./assets/email.png">
-            <p>Email Address</p>
-            <p>hphker@hphk.kr</p>
-          </div>
-          <div class="more-card">
-            <img class="more-img" src="./assets/telephone.png">
-            <p>Phone Number</p>
-            <p>010-1234-5678</p>
-          </div>
-          <div class="more-card">
-            <img class="more-img" src="./assets/location.png">
-            <p>Location</p>
-            <p>서울특별시</p>
-          </div>
-          <div class="more-card">
-            <img class="more-img" src="./assets/clock.png">
-            <p>Working Hours</p>
-            <p>9am ~ 6pm</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    </section>
+  </section>
   <a class="top-btn" href="">Top</a>
 </body>
 </html>

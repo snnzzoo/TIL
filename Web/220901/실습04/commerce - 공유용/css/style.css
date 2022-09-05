@@ -8,26 +8,36 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   min-width: 1280px;
   color: #333333;
+  height: 10000px;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  margin: auto;
+}
+
+/* Nav Bar */
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   position: sticky;
-  background-color: rgb(246, 246, 246);
-  height: 3rem;
   top: 0;
+  height: 3rem;
   padding: 2rem;
+  background-color: rgba(24, 233, 233, 0.5);
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: larger;
+  font-weight: bold;
 }
 
 .nav-list {
   display: flex;
-  padding: 2px;
+  /* padding: 2px; */
 }
 
 .nav-link {
@@ -37,42 +47,55 @@ body {
 
 .nav-link:hover {
   color: aliceblue;
-  background-color: rgb(148, 148, 148);
-  /* padding: 4px; */
+  background-color: rgb(0, 75, 75);
   border-radius: 10%;
 }
 
 .nav-item {
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
+  width: 6rem;
+  text-align: center;
 }
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-}
-
+/* 배너 영역 */
 .banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   height: 700px;
   background-image: url("../assets/apparel.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  /* align-items: center; */
-  width: 1280px;
-  padding: 3rem;
+/* .banner:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.banner-title {
+  color: black;
+  opacity: 65%;
+  font-size: 6.5rem;
+  font-weight: bolder;
+  margin: 4rem;
 }
+
+.banner-text {
+  font-size: 1.5rem;
+}
+
+/* 본문 영역 */
+
+/* .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
 
 .about {
   display: flex;
-  flex-direction: row;
   padding: 2rem;
 }
 
@@ -81,12 +104,12 @@ body {
   position: relative;
 }
 
-.about-img-wrapper:hover >h4 {
+.about-img-wrapper:hover >p {
   visibility: visible;
   font-size: 1.5rem;
 }
 
-.about-img-wrapper > h4 {
+.about-img-wrapper > p {
   position: absolute;
   top: 48%;
   left: 50%;
@@ -115,6 +138,14 @@ body {
   font-size: 2.5rem;
   text-align: center;
   line-height: 1rem;
+  padding: 1.5rem;
+}
+
+.title-line {
+  width: 28rem;
+  height: 2px;
+  /* border: 1px solid rgb(36, 38, 38); */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 .about-text {
@@ -130,12 +161,13 @@ body {
 .more-title {
   font-size: 2.5rem;
   text-align: center;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin: .5rem;
 }
 
-.more-box {
+.more-list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-evenly;
   /* margin: auto; */
 }
 
@@ -148,7 +180,7 @@ body {
   height: 10rem;
 }
 
-.more-img {
+.more-icon {
   width: 64px;
   height: 64px;
 }
@@ -158,7 +190,7 @@ body {
   bottom: 2rem;
   right: 2rem;
   border: 1.5px solid black;
-  background-color: rgb(246, 246, 246);
+  background-color: rgb(24, 233, 233);
   border-radius: 50%;
   height: 3.5rem;
   width: 3.5rem;
