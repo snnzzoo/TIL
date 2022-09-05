@@ -359,21 +359,10 @@
 
 ## 📱 Display
 
+![image-20220905225017408](README.assets/image-20220905225017408.png)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image-20220905225042705](README.assets/image-20220905225042705.png)
 
 
