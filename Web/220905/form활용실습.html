@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Form 활용 실습</h1>
+    <form action="">
+      <!-- autofocus 및 label 확인 -->
+      <div class="input-group">
+        <label for="username">아이디</label>
+      </div>
+      <input type="text" name="username" id="username" autofocus>
+
+      <!-- disabled 및 value 확인 -->
+      <div class="input-group">
+        <label for="name">이름</label>
+      </div>
+      <input type="text" name="name" value="홍길동" id="name" disabled>
+
+      <!-- label 확인 -->
+      <div class="input-group">
+        <label for="agreement">개인정보 수집에 동의합니다.</label>
+      </div>
+      <input type="checkbox" name="agreement" id="agreement">
+      <div class="input-group">
+        <label>최종 제출을 확인합니다.</label>
+      </div>
+      <input type="checkbox">
+    </form>
+    <input type="submit" value="제출">
+
+    <hr><br>
+    <!-- input 유형 -->
+    <!-- text -->
+    <div class="input-group">
+      <label>text</label>
+    </div>
+    <input type="text">
+    <!-- password -->
+    <div class="input-group">
+      <label>password</label>
+    </div>
+    <input type="password">
+    <!-- email -->
+    <div class="input-group">
+      <label>e-mail</label>
+    </div>
+    <input type="email">
+    <!-- number -->
+    <div class="input-group">
+      <label>number</label>
+    </div>
+    <input type="number">
+    <!-- file -->
+    <div class="input-group">
+      <label>file</label>
+    </div>
+    <input type="file">
+
+    <hr><br>
+    <!-- 항목 선택 -->
+    <div>
+      <p>checkbox</p>
+      <input id="html" type="checkbox" name="language" value="html">
+      <label for="html">HTML</label>
+      <input id="python" type="checkbox" name="language" value="python">
+      <label for="python">Python</label>
+      <input id="java" type="checkbox" name="language" value="java">
+      <label for="java">Java</label>
+      <hr>
+    </div>
+    <div>
+      <p>radio button</p>
+      <input id="happy" type="radio" name="feeling" value="happy">
+      <label for="happy">행복</label>
+      <input id="sad" type="radio" name="feeling" value="sad">
+      <label for="sad">슬픔</label>
+      <input id="neutral" type="radio" name="feeling" value="neutral">
+      <label for="neutral">중립</label>
+    </div>
+
+    <hr><br>
+    <!-- picker -->
+    <div>
+      <label for="color">My favorite color is</label>
+      <input id="color" type="color" name="color" value="color">
+    </div>
+    <br>
+    <div>
+      <label for="birthday">Date of birth</label>
+      <input id="birthday" type="date" name="birthday" value="birthday">
+    </div>
+</body>
+</html>
