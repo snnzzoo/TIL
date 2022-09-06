@@ -148,8 +148,8 @@
 
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
-| 09.05 | [Bootstrap](https://github.com/snnzzoo/TIL/tree/master/Web/220905) |
-| 09.06 |                                                              |
+| 09.05 | [HTML form & Bootstrap](https://github.com/snnzzoo/TIL/tree/master/Web/220905) |
+| 09.06 | [Bootstrap Components](https://github.com/snnzzoo/TIL/tree/master/Web/220906) |
 | 09.07 |                                                              |
 | 09.08 |                                                              |
 | 09.09 |                                                              |
