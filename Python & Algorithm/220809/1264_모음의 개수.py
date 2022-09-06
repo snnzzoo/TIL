@@ -11,7 +11,5 @@ while True:
     for _ in data:
         if _ in 'aeiouAEIOU': # 모음이면
             cnt += 1
+    
     print(cnt)
-
-
-
