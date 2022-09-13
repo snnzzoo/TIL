@@ -151,8 +151,16 @@
 | 09.05 | [HTML form & Bootstrap](https://github.com/snnzzoo/TIL/tree/master/Web/220905) |
 | 09.06 | [Bootstrap Components](https://github.com/snnzzoo/TIL/tree/master/Web/220906) |
 | 09.07 | [Bootstrap Grid System](https://github.com/snnzzoo/TIL/tree/master/Web/220907) |
-| 09.08 |                                                              |
-| 09.09 |                                                              |
+| 09.08 | [실습](https://github.com/snnzzoo/TIL/tree/master/Web/220908) |
 
 
+
+#### 📓 9월 2주차
+
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 09.13 | [Web Pair Programming](https://github.com/snnzzoo/TIL/tree/master/Web/220913) |
+| 09.14 |                                                              |
+| 09.15 |                                                              |
+| 09.16 |                                                              |
 
