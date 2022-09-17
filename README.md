@@ -140,7 +140,7 @@
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
 | 09.01 | [Semantic HTML Tag](https://github.com/snnzzoo/TIL/tree/master/Web/220901) |
-| 09.02 | [Web Pair Programming](https://github.com/snnzzoo/TIL/tree/master/Web/220902) |
+| 09.02 | [Web Pair Programming - 영화 추천 서비스](https://github.com/snnzzoo/TIL/tree/master/Web/220902) |
 
 
 
@@ -155,12 +155,24 @@
 
 
 
-#### 📓 9월 2주차
+#### 📓 9월 3주차
 
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
-| 09.13 | [Web Pair Programming](https://github.com/snnzzoo/TIL/tree/master/Web/220913) |
-| 09.14 |                                                              |
-| 09.15 |                                                              |
-| 09.16 |                                                              |
+| 09.13 | [Web Pair Programming - 영화 리뷰 사이트](https://github.com/snnzzoo/TIL/tree/master/Web/220913) |
+| 09.14 | [Web Pair Programming - 영화 리뷰 사이트](https://github.com/snnzzoo/TIL/tree/master/Web/220914) |
+| 09.15 | [JavaScript](https://github.com/snnzzoo/TIL/tree/master/Web/220915) |
+| 09.16 | [JavaScript 문법](https://github.com/snnzzoo/TIL/tree/master/Web/220916) |
+
+
+
+#### 📓 9월 4주차
+
+| Date  | TIL  |
+| :---: | :--: |
+| 09.19 |      |
+| 09.20 |      |
+| 09.21 |      |
+| 09.22 |      |
+| 09.23 |      |
 
