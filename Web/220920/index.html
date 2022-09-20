@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random #</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <h1 style="text-align: center; margin-top: 5rem">랜덤 번호 생성기</h1>
+      <div>
+        <button id="draw-btn" class="btn" style="width: 13rem; height: 2.5rem">
+          Draw Random Numbers
+        </button>
+        <button id="reset-btn" class="btn" style="width: 5rem; height: 2.5rem">
+          Reset
+        </button>
+      </div>
+      <div id="result"></div>
+
+      <!-- <div id="ball-container">
+      <div class="ball">10</div>
+      <div class="ball">10</div>
+      <div class="ball">10</div>
+      <div class="ball">10</div>
+    </div> -->
+    </main>
+    <footer style="margin: 4rem">Copyright 2022. 임선주 (unfinished).</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+      const btn = document.querySelector("#draw-btn");
+      btn.addEventListener("click", function () {
+        console.log("번호 추첨");
+
+        // 요소 만들기
+        // 1. 컨테이너 만들기
+        const ballContainer = document.createElement("div");
+        ballContainer.classList.add("ball-container");
+        // 2. 공 만들기 => 6개
+        const numbers = _.sampleSize(_.range(1, 46), 6);
+        console.log(numbers);
+
+        const ball = document.createElement("div");
+        ball.classList.add("ball");
+        ball.innerText = numbers[0];
+        // 2-2. 공마다 숫자 하나씩 부여
+        // 2-3. 색상
+        // if (numbers[i] < 11) {
+        //   ball.style.backgroundColor = "yellow";
+        // } else if (numbers[i] < 21) {
+        //   ball.style.backgroundColor = "blue";
+        // } else if (numbers[i] < 31) {
+        //   ball.style.backgroundColor = "red";
+        // } else if (numbers[i] < 41) {
+        //   ball.style.backgroundColor = "grey";
+        // } else {
+        //   ball.style.backgroundColor = "green";
+        // }
+
+        // 3. 컨테이너에 붙이기
+        ballContainer.appendChild(ball);
+        // 4. 컨테이너를 결과 영역에 붙이기
+        const result = document.querySelector("#result");
+        result.appendChild(ballContainer);
+
+        const reset = document.querySelector("#reset-btn");
+        reset.addEventListener("click", function () {
+          window.location.reload();
+        });
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 해결 과제 -->
+<!--
+  1. 입력 개수만큼 공 생성
+  2. 번호 중복 방지
+  3. 공이 화면 너머 안사라지게 width 설정
+-->
