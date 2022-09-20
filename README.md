@@ -161,18 +161,18 @@
 | :---: | :----------------------------------------------------------: |
 | 09.13 | [Web Pair Programming - 영화 리뷰 사이트](https://github.com/snnzzoo/TIL/tree/master/Web/220913) |
 | 09.14 | [Web Pair Programming - 영화 리뷰 사이트](https://github.com/snnzzoo/TIL/tree/master/Web/220914) |
-| 09.15 | [JavaScript](https://github.com/snnzzoo/TIL/tree/master/Web/220915) |
+| 09.15 | [JavaScript Intro](https://github.com/snnzzoo/TIL/tree/master/Web/220915) |
 | 09.16 | [JavaScript 문법](https://github.com/snnzzoo/TIL/tree/master/Web/220916) |
 
 
 
 #### 📓 9월 4주차
 
-| Date  | TIL  |
-| :---: | :--: |
-| 09.19 |      |
-| 09.20 |      |
-| 09.21 |      |
-| 09.22 |      |
-| 09.23 |      |
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 09.19 | [JavaScript Event](https://github.com/snnzzoo/TIL/tree/master/Web/220919) |
+| 09.20 | [랜덤 번호 생성 사이트 만들기](https://github.com/snnzzoo/TIL/tree/master/Web/220920) |
+| 09.21 |                                                              |
+| 09.22 |                                                              |
+| 09.23 |                                                              |
 
