@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>preventDefault</title>
+    <style>
+      .container {
+        height: 1000px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <!-- 1. checkbox -->
+    <input type="checkbox" id="my-checkbox" />
+    <!-- 2. form tag -->
+    <form action="/articles/" id="my-form">
+      <input type="text" />
+      <input type="submit" value="제출!" />
+    </form>
+    <!-- 3. a tag -->
+    <a href="https://google.com/" target="_blank" id="my-link">GoToGoogle</a>
+    <a href="https://naver.com/" target="blank" id="my-link">GoToNaver</a>
+
+    <!-- _blank vs. blank -->
+    <!-- 
+    _blank : 크리넥스 티슈처럼 계속 새 탭이 열리고
+    blank : 오로지 한 탭이 새로 열린다. -->
+
+    <script>
+      // 1. checkbox
+      const checkBox = document.querySelector("#my-checkbox");
+
+      checkBox.addEventListener("click", function (event) {
+        event.preventDefault();
+        console.log(event);
+      });
+      // 2.form tag
+      const formTag = document.querySelector("#my-form");
+
+      formTag.addEventListener("submit", function (event) {
+        console.log(event);
+        event.preventDefault();
+        event.target.reset();
+      });
+
+      // 3. a tag
+      const aTag = document.querySelector("#my-link");
+
+      aTag.addEventListener("click", function (event) {
+        console.log(event);
+        event.preventDefault();
+      });
+      // querySelectorAll()은 어떻게 적용할 수 있을까?
+
+      // 4. scroll
+      document.addEventListener("scroll", function (event) {
+        console.log(event);
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>

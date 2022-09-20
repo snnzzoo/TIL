@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>querySelector vs. querySelectorAll</title>
+  </head>
+  <body>
+    <div id="sections">
+      <ol class="section">
+        1
+        <li>1-1</li>
+        <li>1-2</li>
+        <li>1-3</li>
+      </ol>
+
+      <ol class="section">
+        2
+        <li>2-1</li>
+        <li>2-2</li>
+        <li>2-3</li>
+      </ol>
+    </div>
+
+    <script>
+      // 1. querySelector
+      // 특정 name, id, class를 제한하지 않고 css선택자를 사용하여 요소를 찾음
+      // 같은 id 또는 class 일 경우 스크립트의 최상단 요소만 로직에 포함
+
+      // querySelector(#id) => id 값 id를 가진 요소를 찾음
+      // querySelector(.class) => class 값 class를 가진 요소를 찾음
+      var section = document.querySelector("#sections .section");
+
+      section.style.border = "1px solid #ff0000";
+
+      // 2. querySelectorAll
+      // querySelector와 사용 방법은 동일, 선택자를 선택하여 배열과 비슷한 객체인 nodeList를 반환
+      // 반환객체가 nodeList이기에 for문 또는 forEach문을 사용
+      // 아래 코드와 같이 ","를 사용하면 여러 요소를 한번에 가져올 수 있음
+
+      // querySelectorAll("#id,.class")
+      var sections = document.querySelectorAll(
+        "#sections , #sections .section"
+      );
+      console.log(sections.constructor.name);
+      for (var i = 0; i < sections.length; i++) {
+        var item = sections.item(i);
+        item.style.border = "1px solid #ff0000";
+      }
+    </script>
+  </body>
+</html>

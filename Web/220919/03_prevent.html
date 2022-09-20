@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>prevent</title>
+  </head>
+  <body>
+    <div>
+      <h1>정말 <span>중요한</span> 내용</h1>
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo autem quis
+      adipisci amet deleniti laudantium in asperiores, id laboriosam odio!
+      Cupiditate magnam qui accusantium accusamus natus placeat facilis sint
+      soluta repellat quasi unde sapiente omnis, sunt, voluptatum asperiores ut
+      consequatur praesentium ratione, dolorem excepturi. Magnam nostrum
+      molestias, maxime sit quia dicta beatae consequuntur? Pariatur nihil
+      necessitatibus assumenda deserunt obcaecati atque, et iure iusto neque
+      quibusdam perspiciatis autem ducimus natus velit iste dignissimos,
+      excepturi architecto debitis cum quo? Molestiae corporis autem dolorem
+      esse explicabo, molestias cum quo et error voluptate in exercitationem
+      totam minus dolor pariatur minima illum quam perspiciatis, cupiditate sed
+      ullam consectetur fugiat repellat obcaecati. Animi laborum debitis facilis
+      asperiores, numquam praesentium! Est sit dolores quia, voluptatum ipsam id
+      cum explicabo doloremque laudantium cumque, harum corporis obcaecati minus
+      rerum nesciunt, consectetur deserunt neque distinctio consequatur
+      reiciendis amet rem in ut? Molestias nulla similique quisquam sit dolorem
+      labore nemo nisi. Dolorum officia laudantium illo iste rerum quas amet
+      deleniti, eligendi eveniet corrupti velit natus autem est voluptatem
+      sapiente ex quia. Expedita reiciendis necessitatibus molestiae harum
+      voluptate praesentium at commodi vitae temporibus, sit minus accusamus
+      animi est voluptatum et voluptas. Repellendus asperiores recusandae ipsa
+      illo expedita dicta rem, fugit ullam tempore?
+      <script>
+        const h1 = document.querySelector("h1");
+        h1.addEventListener("copy", function (event) {
+          // event의 기본 동작을 막고,
+          event.preventDefault();
+          console.log("삐빅 복사를 할 수 없습니다.");
+        });
+
+        h1.addEventListener("click", function (event) {
+          event.preventDefault();
+          console.log(event.button);
+        });
+      </script>
+    </p>
+  </body>
+</html>
