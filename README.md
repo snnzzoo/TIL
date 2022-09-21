@@ -172,7 +172,7 @@
 | :---: | :----------------------------------------------------------: |
 | 09.19 | [JavaScript Event](https://github.com/snnzzoo/TIL/tree/master/Web/220919) |
 | 09.20 | [랜덤 번호 생성 사이트 만들기](https://github.com/snnzzoo/TIL/tree/master/Web/220920) |
-| 09.21 |                                                              |
+| 09.21 | [Django 시작하기](https://github.com/snnzzoo/TIL/tree/master/Django/220921) |
 | 09.22 |                                                              |
 | 09.23 |                                                              |
 
