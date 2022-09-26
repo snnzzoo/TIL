@@ -173,6 +173,17 @@
 | 09.19 | [JavaScript Event](https://github.com/snnzzoo/TIL/tree/master/Web/220919) |
 | 09.20 | [랜덤 번호 생성 사이트 만들기](https://github.com/snnzzoo/TIL/tree/master/Web/220920) |
 | 09.21 | [Django 시작하기](https://github.com/snnzzoo/TIL/tree/master/Django/220921) |
-| 09.22 |                                                              |
-| 09.23 |                                                              |
+| 09.22 | [요청과 응답](https://github.com/snnzzoo/TIL/tree/master/Django/220922) |
+| 09.23 |                      프로젝트 사전 기획                      |
 
+
+
+#### 📓 9월 5주차
+
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 09.26 | [Sending and Retrieving form data](https://github.com/snnzzoo/TIL/tree/master/Django/220926#-sending-and-retrieving-form-data) |
+| 09.27 |                                                              |
+| 09.28 |                                                              |
+| 09.29 |                                                              |
+| 09.30 |                                                              |
