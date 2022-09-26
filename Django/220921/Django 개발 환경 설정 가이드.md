@@ -48,7 +48,9 @@ Django 개발을 할 때도 가상환경을 사용하지 않으면 특정 패키
 
 > `source server-venv/Scripts/activate`를 입력하여 가상환경을 실행한다.
 >
-> (Mac의 경우, `source server-venv/bin/activate`를 입력한다.)
+> `. server-venv/Scripts/activate`를 입력해도 무방하다. Tab키를 눌러 자동완성 기능을 사용한다.
+>
+> (🍏 Mac의 경우, `source server-venv/bin/activate`를 입력한다.)
 >
 > `(server-venve)`라는 표시가 생기면 가상환경이 활성화된 것!
 >
@@ -63,6 +65,8 @@ Django 개발을 할 때도 가상환경을 사용하지 않으면 특정 패키
 > Django가 없는 경우 설치를 해야 한다.
 
 
+
+- 가상환경 비활성화
 
 ![image-20220922031158872](Django 개발 환경 설정 가이드.assets/image-20220922031158872.png)
 
