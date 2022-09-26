@@ -204,9 +204,9 @@ TEMPLATES = [
 
 
 
-## ✨ Sending form data (Client)
+### 🌠 Sending form data (Client)
 
-### 🌠 HTML \<form> element
+#### 🧩 HTML \<form> element
 
 - 데이터가 전송되는 방법을 정의
 - 웹에서 사용자 정보를 입력하는 여러 방식(text, button, submit 등)을 제공하고, **사용자로부터 할당된 데이터를 서버로 전송**하는 역할을 담당
@@ -262,7 +262,7 @@ def throw(request):
 
 
 
-### 🌠 HTML \<input> element
+#### 🧩 HTML \<input> element
 
 - 사용자로부터 데이터를 입력 받기 위해 사용
 - “type” 속성에 따라 동작 방식이 달라진다.
@@ -304,7 +304,7 @@ def throw(request):
 
 
 
-### 🌠 HTTP request methods
+#### 🧩 HTTP request methods
 
 - HTTP
   - HTML 문서와 같은 리소스(데이터, 자원)들을 가져올 수 있도록 해주는 프로토콜(규칙, 규약)
@@ -323,7 +323,7 @@ def throw(request):
 
 
 
-#### 🧩 GET
+#####  ✔ GET
 
 - 서버로부터 정보를 조회하는 데 사용
   - 즉, 서버에게 리소스를 요청하기 위해 사용
@@ -333,7 +333,7 @@ def throw(request):
 
 
 
-#### 🧩 GET 메서드 작성
+##### ✔ GET 메서드 작성
 
 - GET과 get 모두 대소문자 관계없이 동일하게 동작하지만 명시적 표현을 위해 대문자 사용을 권장
 - 데이터를 입력 후 submit 버튼을 누르고 URL의 변화를 확인한다.
@@ -355,7 +355,7 @@ def throw(request):
 
 
 
-### 🌠 Query String Parameters
+#### 🧩 Query String Parameters
 
 - 사용자가 입력 데이터를 전달하는 방법 중 하나로, url 주소에 데이터를 파라미터를 통해 넘기는 것
 - 이러한 문자열은 앰퍼샌드(`&`)로 연결된 key=value 쌍으로 구성되며 기본 URL과 물음표(`?`) 로 구분됨
@@ -370,7 +370,7 @@ def throw(request):
 
 
 
-## ✨ Retrieving the data (Server)
+### 🌠 Retrieving the data (Server)
 
 > “데이터 가져오기(검색하기)”
 
@@ -410,7 +410,7 @@ def catch(request):
 
 
 
-### 🌠 action 작성
+#### 🧩 action 작성
 
 - throw 페이지에서 form의 action 부분을 마저 작성하고 데이터를 보낸다.
 - 실습 편의를 위해 index 페이지에 throw 하이퍼 링크를 작성한다.
@@ -445,7 +445,7 @@ def catch(request):
 
 
 
-### 🌠 데이터 가져오기
+#### 🧩 데이터 가져오기
 
 - catch 페이지가 잘 응답되어 출력됨을 확인
 - 그런데 throw 페이지의 form이 보낸 데이터는 어디에 들어 있는걸까?
@@ -500,7 +500,7 @@ def catch(request):
 
 
 
-### 🌠 catch 작성 마무리
+#### 🧩 catch 작성 마무리
 
 ![image-20220927002652098](README.assets/image-20220927002652098.png)
 
