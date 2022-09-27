@@ -20,6 +20,8 @@ from D3_practices import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
+    path('number/<int:_number>', views.number),
+    path('text/', views.text),
     path('math/', views.math),
     path('random/', views.random),
     path('flower/', views.flower),
