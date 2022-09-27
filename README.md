@@ -183,7 +183,7 @@
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
 | 09.26 | [Sending and Retrieving form data](https://github.com/snnzzoo/TIL/tree/master/Django/220926#-sending-and-retrieving-form-data) |
-| 09.27 |                                                              |
+| 09.27 | [App URL mapping & Template namespace](https://github.com/snnzzoo/TIL/tree/master/Django/220927) |
 | 09.28 |                                                              |
 | 09.29 |                                                              |
 | 09.30 |                                                              |
