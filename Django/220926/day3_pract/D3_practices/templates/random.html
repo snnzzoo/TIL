@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="m-5 text-center">
+  <h1 class="fs-3 mb-4">이름을 입력하세요</h1>
+  <form action="/flower" method="GET">
+    <input class="form-control" type="text" name="flower" />
+    <button class="btn btn-success mt-3" type="submit">
+      나와 잘 어울리는 꽃 확인하기
+    </button>
+  </form>
+</div>
+{% endblock %}

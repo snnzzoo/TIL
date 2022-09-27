@@ -1,0 +1,13 @@
+{% extends 'base.html' %} {% block content %}
+<div class="m-5 justify-content-center">
+  <h1 class="fs-3 mb-4">
+    {{ name }}님, 당신은 <span class="fw-bold">{{ pick }}</span>같은 분이시군요!
+  </h1>
+  <p>{{ pick }}에 대해서 알아보기</p>
+  <form action="http://www.google.com/search">
+    <input class="form-control" type="text" name="q" />
+    <button class="btn btn-success mt-3" type="submit">구글 검색</button>
+  </form>
+</div>
+
+{% endblock %}
