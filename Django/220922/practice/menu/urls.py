@@ -19,6 +19,6 @@ from rec_menu import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index/', views.index),
-    path('korean/', views.korean),
+    path('index/', views.index, name='index'),
+    path('korean/', views.korean, name='korean'),
 ]
