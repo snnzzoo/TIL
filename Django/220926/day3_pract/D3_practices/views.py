@@ -7,12 +7,14 @@ import random
 def index(request):
     return render(request, 'index.html')
 
+
 def number(request, _number):
     context = {
         # "템플릿 변수 이름": 값
         "number": _number,
     }
     return render(request, 'number.html', context)
+
 
 def text(request):
     text = request.GET.get("_text")
@@ -22,6 +24,7 @@ def text(request):
         "template_text": text,
     }
     return render(request, 'text.html', context)
+
 
 def math(request):
     return render(request, 'math.html')
@@ -42,3 +45,24 @@ def flower(request):
         'flowers': flowers,
     }
     return render(request, 'flower.html', context)
+
+
+def lorem(request):
+    return render(request, 'lorem.html')
+
+
+def result(request):
+    word_list = ['꽃게', '홍게', '대게', '킹크랩', '랍스터', '게', '소라게']
+    paragraph = int(request.GET.get('paragraph'))
+    word = int(request.GET.get('word'))
+    print(paragraph, word)
+
+    lorem_para = []
+
+    # 입력한 문단의 수 만큼 랜덤으로 단어를 추출하는 반복문을 반복
+    for _ in range(paragraph):
+        # 입력한 단어의 수 만큼 랜덤으로 단어를 추출하는 반복
+        string = ""
+        for _ in range(word):
+            string += random.choice(word_list) + " "
+    return render(request, 'result.html')

@@ -25,4 +25,6 @@ urlpatterns = [
     path('math/', views.math),
     path('random/', views.random),
     path('flower/', views.flower),
+    path('lorem/', views.lorem, name='lorem'),
+    path('result/', views.result, name='result'),
 ]

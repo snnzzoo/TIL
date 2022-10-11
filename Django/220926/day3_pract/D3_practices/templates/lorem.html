@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<h1>lorem.html</h1>
+<!-- 입력한 text를 text.html로 전송 -->
+<form action="{% url 'result' %}">
+  <label for="">문단의 수</label>
+  <input type="number" name="paragraph" />
+  <label for="">단어의 수</label>
+  <input type="number" name="word" />
+  <input type="submit" />
+</form>
+{% endblock %}
