@@ -1,7 +1,9 @@
 from django.shortcuts import render, redirect
 from .models import Post
 
-# Create your views here.
+
+# READ 1
+# 데이터의 목록을 출력
 
 
 def index(request):
@@ -17,8 +19,33 @@ def index(request):
     return render(request, 'posts/index.html', context)
 
 
+# READ 2
+# 하나의 데이터에 대한 정보를 출력
+
+
+def detail(request, pk_):
+    # get() 메소드를 사용해서 특정 pk의 데이터를 불러온다.
+    # 불러온 데이터를 변수에 할당
+    post = Post.objects.get(pk=pk_)
+
+    context = {
+        'post': post,
+    }
+
+    return render(request, 'posts/detail.html', context)
+
+
 def new(request):
     return render(request, 'posts/new.html')
+
+
+def edit(request, pk_):
+    # get 메소드를 사용해서 특정 pk 데이터를 불러온다.
+    post = Post.objects.get(pk=pk_)
+    context = {
+        'post': post,
+    }
+    return render(request, 'posts/edit.html', context)
 
 
 def create(request):
@@ -37,6 +64,26 @@ def create(request):
 
     # return render(request, 'posts/create.html', context)
     return redirect('posts:index')
+
+
+# READ + CREATE + 알파
+# READ : 수정 페이지에 데이터를 출력
+def update(request, pk_):
+    # update할 특정 데이터를 불러온다. => pk_를 사용해서
+    post = Post.objects.get(pk=pk_)
+
+    title_ = request.GET.get('title')
+    content_ = request.GET.get('content')
+
+    # 데이터를 수정
+    post.title = title_
+    post.content = content_
+
+    # save()로 수정한 데이터를 반영
+    post.save()
+
+    # 데이터의 디테일 페이지로 redirect
+    return redirect('posts:detail', post.pk)
 
 
 def delete(request, pk):
