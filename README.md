@@ -15,11 +15,13 @@
 
 ## 📚 Daily Record
 
-- [🤿 7월](#📓-7월-1주차)
+- [🤿 7월](#🤿-7월)
 
-- [🧊 8월](#📓-8월-1주차)
+- [🧊 8월](#🧊-8월)
 
-- [🍂 9월](#📓-9월-1주차)
+- [🍂 9월](#🍂-9월)
+
+- [🌾 10월](#🌾-10월)
 
 
 
@@ -186,4 +188,17 @@
 | 09.27 | [App URL mapping & Template namespace](https://github.com/snnzzoo/TIL/tree/master/Django/220927) |
 | 09.28 | [Namespace & Django MTV Design Pattern & QuerySet API](https://github.com/snnzzoo/TIL/tree/master/Django/220928) |
 | 09.29 |                                                              |
-| 09.30 |                                                              |
+| 09.30 | [Pair Programming - 영화 리뷰 커뮤니티(CRUD)](https://github.com/snnzzoo/01-Pair-01) |
+
+
+
+### 🌾 10월
+
+#### 📓 10월 1주차
+
+| Date  | TIL  |
+| :---: | :--: |
+| 10.04 |      |
+| 10.05 |      |
+| 10.06 |      |
+| 10.07 |      |
