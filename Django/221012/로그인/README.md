@@ -1,26 +1,20 @@
-# 🚀 회원 관리가 가능한 게시글 커뮤니티 CRUD
+# 🚀 회원 관리가 가능한 게시글 커뮤니티
 
 ![Animation](README.assets/Animation.gif)
-
-
 
 ## 프로젝트 기간
 
 2022.10.12 - 10.13.
 
-
-
 ## 프로젝트 목적
 
 Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
-
-
 
 ## 프로젝트 설명
 
 ### 모델 Model
 
-------
+---
 
 - 모델 이름 : Review
 
@@ -33,18 +27,15 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
   | created_at | 할 일 생성시간 | DateTime | auto_now_add=True |
   | updated_at | 할 일 수정시간 | DateTime | auto_now = True   |
 
-
-
 - 모델 이름 : User
   - Django **AbstractUser** 모델 상속
-
-
 
 ### **폼 Form**
 
 ---
 
 - 회원가입
+
   - Django 내장 회원가입 폼 UserCreationForm을 상속 받아서 **CustomUserCreationForm** 작성&활용
   - 해당 폼은 아래 필드만 출력
     - username
@@ -52,6 +43,7 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
     - password2
 
 - 로그인
+
   - Django 내장 로그인 폼 **AuthenticationForm 활용 @**
 
 - 회원 정보 수정
@@ -61,11 +53,9 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
     - last_name
     - email
 
-
-
 ### 기능 View
 
-------
+---
 
 - 게시글 목록 보기
 - 게시글 내용 보기
@@ -82,12 +72,9 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
 - 회원 정보 수정
   - **CustomUserChangeForm** 활용
 
-
-
 ### 화면 Template
 
-------
-
+---
 
 - 네비게이션바, Bootstrap \<nav>
 
@@ -174,15 +161,11 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
   - 비밀번호 변경 폼
   - 저장 버튼
 
-  
-
 ## 사용 기술
 
 - 언어: `HTML`, `CSS`,`Python`
 - 라이브러리: X
 - 프레임워크: Django
-
-
 
 ## 느낀점
 
@@ -194,8 +177,6 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
 
 처음엔 이해가 되지 않았던 것들도 반복해서 연습하다보니 자연스레 습득되고 있다.
 
-
-
 ## 개선사항
 
 - Navbar에 로고를 Static 이미지로 넣으려 했으나 왜인지 작동하지 않음
@@ -204,5 +185,3 @@ Django Auth를 활용한 회원 관리가 가능한 게시판 서비스 개발
   - 회원 목록 페이지와 동일하게 `base.html`을 extends하여 사용하는데 왜 다른 결과가 나타날까?
 - `accounts/detail.html`에 문제
   - Navbar의 username을 클릭하면 My Profile로 이동해야 하는데 detail 페이지에서만 작동하지 않음
-
-
