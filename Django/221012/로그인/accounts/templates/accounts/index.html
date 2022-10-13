@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <div class="container my-5">
+    <h1 class="text-center my-5 fs-3 fw-bold">Users</h1>
+    <table class="table table-hover mb-4 text-center">
+      <thead class="table-success align-middle" style="height: 3rem;">
+        <tr>
+          <th scope="col">pk</th>
+          <th scope="col">User Name</th>
+          <th scope="col">E-mail</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for user in users %}
+          <tr>
+            <th scope="row" class="align-middle">{{ user.pk }}</td>
+            <td class="align-middle">
+              <a href="{% url 'accounts:detail' user.pk %}" class="text-decoration-none">{{ user.username }}</a>
+            </td>
+            <td class="align-middle">{{ user.email }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endblock content %}

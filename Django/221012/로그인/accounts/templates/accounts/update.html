@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% block content %}
+
+  <div class="container d-flex justify-content-center">
+    <div class="card my-5" style="width: 50rem;">
+      <div class="card-body">
+        <h1 class="text-center my-4 fs-3 fw-bold">My Profile</h1>
+        <div class="d-flex justify-content-center">
+          <div class="col-8">
+            <form action="{% url 'accounts:update' %}" method="POST">
+              {% csrf_token %}
+              {% bootstrap_form form %}
+              <div class="my-4">
+                <button class="btn btn-outline-primary my-2" type="submit">SAVE</button>
+                <a href="{% url 'accounts:change_password' %}" class="btn btn-outline-secondary mx-3">Change Password</a>
+                <a href="{% url 'accounts:delete' %}" class="btn btn-outline-danger">Delete My Account</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

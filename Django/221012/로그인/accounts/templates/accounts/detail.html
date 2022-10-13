@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+  <div class="d-flex align-items-center flex-column">
+    <div class="card mt-5" style="width: 30rem;">
+      <div class="card-header">
+        {{ user.pk }}번째 회원
+      </div>
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body text-center">
+        <h4 class="card-title">{{ user.username }}님의 프로필</h4>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <i class="me-2 bi bi-person-fill"></i>
+          {{ user.get_full_name }}</li>
+        <li class="list-group-item">
+          <i class="me-2 bi bi-envelope"></i>
+          {{ user.email }}</li>
+        <li class="list-group-item">
+          <i class="me-2 bi bi-calendar-heart"></i>
+          생일</li>
+        <li class="list-group-item">
+          <i class="me-2 bi bi-gender-ambiguous"></i>
+          성별</li>
+      </ul>
+    </div>
+    {% if request.user == user %}
+      <div class="my-4">
+        <a href="{% url 'accounts:update' %}" class="btn btn-outline-primary me-3">EDIT</a>
+        <a href="{% url 'accounts:index' %}" class="btn btn-outline-secondary me-3">BACK</a>
+      </div>
+    {% else %}
+      <a href="{% url 'accounts:index' %}" class="btn btn-outline-secondary me-3 my-4">BACK</a>
+    {% endif %}
+  </div>
+
+{% endblock content %}

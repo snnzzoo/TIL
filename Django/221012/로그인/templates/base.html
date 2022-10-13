@@ -1,0 +1,75 @@
+{% load django_bootstrap5 %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>1012 실습</title>
+    {% bootstrap_css %}
+    {% block css %}{% endblock %}
+    <style>
+      body {
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+    </style>
+  </head>
+
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" style="height: 4rem">
+      <div class="container-fluid">
+        <a href="{% url 'index' %}" class="navbar-brand ms-5"><img style="width: 5rem" src="{% static 'images/logo.png' %}"/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="{% url 'articles:index' %}">Home</a>
+            </li>
+            <li class="nav-item me-3">
+              <a class="nav-link" href="{% url 'articles:create' %}">Add</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="{% url 'accounts:index' %}">Users</a>
+            </li>
+          </ul>
+          <!-- 로그인한 경우 -->
+          {% if user.is_authenticated %}
+            <li class="nav-item">
+              <span class="text-light me-1">Hello,</span>
+              <a class="navbar-brand fw-bold" href="{% url 'accounts:detail' user.pk %}">{{ request.user.username }}</a>
+            </li>
+            <a class="nav-link text-light mx-3" href="{% url 'accounts:logout' %}">Sign Out</a>
+            <!-- guest -->
+          {% else %}
+            <li class="nav-item">
+              <span class="text-light me-1">Hello,</span>
+              <a class="navbar-brand fw-bold" href="#">Guest</a>
+            </li>
+          {% endif %}
+          <form class="d-flex me-5" role="search">
+            <input class="form-control mx-3" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      {% block content %}{% endblock %}
+    </div>
+    <footer class="text-center my-5 text-muted">
+      Copyright 임선주 2022.10.12. - 10.13.
+    </footer>
+
+    {% bootstrap_javascript %}
+  </body>
+
+</html>
