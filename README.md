@@ -210,6 +210,6 @@
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
 | 10.11 | [Django Auth](https://github.com/snnzzoo/TIL/tree/master/Django/221011) |
-| 10.12 |                                                              |
-| 10.13 |                                                              |
+| 10.12 | [로그인](https://github.com/snnzzoo/TIL/tree/master/Django/221012) |
+| 10.13 | [회원정보 수정](https://github.com/snnzzoo/TIL/tree/master/Django/221013) |
 | 10.14 |                                                              |
