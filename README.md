@@ -213,3 +213,15 @@
 | 10.12 | [로그인](https://github.com/snnzzoo/TIL/tree/master/Django/221012) |
 | 10.13 | [회원정보 수정](https://github.com/snnzzoo/TIL/tree/master/Django/221013) |
 | 10.14 |                                                              |
+
+
+
+#### 📓 10월 3주차
+
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 10.17 | [이미지 업로드](https://github.com/snnzzoo/TIL/tree/master/Django/221017) |
+| 10.18 |                                                              |
+| 10.19 |                                                              |
+| 10.20 |                                                              |
+| 10.21 |                                                              |
