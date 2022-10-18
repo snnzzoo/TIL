@@ -8,7 +8,7 @@
     <div class="row row-cols-1 row-cols-md-4 g-5 mt-1">
       {% for article in articles %}
         <div class="col my-4">
-          <a class="text-decoration-none" href="#">
+          <a class="text-decoration-none" href="{% url 'articles:detail' article.pk %}">
             <div class="card h-100">
               <img src="{{ article.images.url }}" alt="{{ article.images }}" class="card-img-top">
               <div class="card-body">

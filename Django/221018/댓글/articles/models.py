@@ -1,5 +1,6 @@
 from django.db import models
-from django.forms import DateTimeField
+from imagekit.processors import ResizeToFill
+from imagekit.models import ProcessedImageField
 
 # Create your models here.
 """
@@ -13,4 +14,8 @@ class Article(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    image = models.ImageField(upload_to='images/', blank=True)
+    image = ProcessedImageField(upload_to='images/',
+                                blank=False,
+                                processors=[ResizeToFill(400, 300)],
+                                format='JPEG',
+                                options={'quality': 80})
