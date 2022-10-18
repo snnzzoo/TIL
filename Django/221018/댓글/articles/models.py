@@ -1,6 +1,6 @@
 from django.db import models
 from imagekit.processors import ResizeToFill
-from imagekit.models import ProcessedImageField
+from imagekit.models import ProcessedImageField, ImageSpecField
 
 # Create your models here.
 """
@@ -15,7 +15,11 @@ class Article(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     image = ProcessedImageField(upload_to='images/',
-                                blank=False,
+                                blank=True,
                                 processors=[ResizeToFill(400, 300)],
                                 format='JPEG',
                                 options={'quality': 80})
+    thumbnail = ImageSpecField(source='image',
+                                processors=[ResizeToFill(240, 160)],
+                                format='JPEG',
+                                options={'quality': 100})

@@ -10,7 +10,7 @@
         <div class="col my-4">
           <a class="text-decoration-none" href="{% url 'articles:detail' article.pk %}">
             <div class="card h-100">
-              <img src="{{ article.images.url }}" alt="{{ article.images }}" class="card-img-top">
+              <img src="{{ article.thumbnail.url }}" alt="{{ article.thumbnail }}" class="card-img-top">
               <div class="card-body">
                 <h5 class="card-title">{{ article.title }}</h5>
               </div>
