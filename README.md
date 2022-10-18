@@ -221,7 +221,7 @@
 | Date  |                             TIL                              |
 | :---: | :----------------------------------------------------------: |
 | 10.17 | [이미지 업로드](https://github.com/snnzzoo/TIL/tree/master/Django/221017) |
-| 10.18 |                                                              |
+| 10.18 | [Comment (1:N)](https://github.com/snnzzoo/TIL/tree/master/Django/221018) |
 | 10.19 |                                                              |
 | 10.20 |                                                              |
 | 10.21 |                                                              |
