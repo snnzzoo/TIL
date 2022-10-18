@@ -3,17 +3,66 @@
 {% load static %}
 
 {% block content %}
-  <h1>상세보기</h1>
-  <h5>{{ article.pk }}번째 게시글</h5>
-  <h1>{{ article.title }}</h1>
-  <p>Created :
-    {{ article.created_at }}
-    | Updated :
-    {{ article.updated_at }}</p>
-  <p>{{ article.content }}</p>
-  {% if article.image %}
-    <img src="{{ article.image.url }}" alt="{{ article.image }}"/>
-  {% endif %}
-  <a class="btn btn-outline-primary" href="#" role="button">Edit</a>
-  <a class="btn btn-outline-danger" href="#" role="button">Delete</a>
+  <div class="container">
+    <div class="card shadow m-5">
+      <div class="card-header">
+        <h5 class="my-2">{{ article.pk }}번째 기록</h5>
+      </div>
+      <div class="card-body">
+        <h2 class="text-center mt-2 mb-4 fw-bold">{{ article.title }}</h2>
+        <hr>
+        <div class="text-end mx-3 text-muted">
+          <p class="my-auto">Created :
+            {{ article.created_at|date:'Y-m-d H:i' }}
+          </p>
+          <p>
+            Updated :
+            {{ article.updated_at|date:'Y-m-d H:i' }}</p>
+        </div>
+        <hr>
+        <div class="my-4">
+          {% if article.image %}
+            <img class="mb-3 align-item-center" src="{{ article.image.url }}" alt="{{ article.image }}"/>
+          {% endif %}
+          <p class="fs-5">{{ article.content }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add a Comment -->
+    <div class="card shadow m-5">
+      <div class="card-body">
+        <form action="{% url 'articles:comment_create' article.pk %}" method="POST">
+          {% csrf_token %}
+          {% bootstrap_form comment_form %}
+          <div class="d-flex justify-content-end">
+            <button class="btn btn-primary me-2" type="submit">Add</button>
+          </div>
+        </form>
+      </div>
+      <!-- Comments -->
+      <div class="card-body p-0">
+        {% for comment in comments %}
+          <hr>
+          <div class="d-flex justify-content-between">
+            <p class="px-3 mt-1">{{ comment.content }}</p>
+            <div class="d-flex">
+              <p class="text-muted mt-1">{{ comment.created_at|date:'Y-m-d H:i' }}</p>
+              <form action="{% url 'articles:comment_delete' article.pk comment.pk %}" method="POST">
+                {% csrf_token %}
+                <a class="btn btn-outline-secondary btn-sm mx-4 rounded-pill" href="{% url 'articles:comment_delete' article.pk comment.pk %}" role="button">Delete</a>
+              </form>
+            </div>
+          </div>
+          {% empty %}
+          <hr>
+          <p class="px-3">No comments yet!</p>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="mx-5">
+      <a class="btn btn-outline-primary me-2" href="{% url 'articles:update' article.pk %}" role="button">Edit</a>
+      <a class="btn btn-outline-secondary me-2" href="{% url 'articles:index' %}" role="button">Back</a>
+      <a class="btn btn-outline-danger" href="{% url 'articles:delete' article.pk %}" role="button">Delete</a>
+    </div>
+  </div>
 {% endblock content %}

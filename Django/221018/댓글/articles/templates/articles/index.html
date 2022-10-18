@@ -3,7 +3,7 @@
 
 {% block content %}
   <div class="container">
-    <h1 class="text-center my-5 fw-bold fs-2">All Posts</h1>
+    <h1 class="text-center my-5 fw-bold fs-2">My Trip Log</h1>
     <a href="{% url 'articles:create' %}" class="btn btn-primary">Add</a>
     <div class="row row-cols-1 row-cols-md-4 g-5 mt-1">
       {% for article in articles %}
@@ -16,7 +16,7 @@
               </div>
               <div class="card-footer">
                 <small class="text-muted">Last updated :
-                  {{ article.updated_at }}</small>
+                  {{ article.updated_at|date:'Y년 m월 d일 H:i' }}</small>
               </div>
             </div>
           </a>

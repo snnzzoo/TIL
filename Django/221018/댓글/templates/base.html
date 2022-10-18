@@ -42,27 +42,20 @@
 
   <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark" style="height: 5rem;">
       <div class="container-fluid">
-        <a class="navbar-brand ms-5" href="#">Navbar</a>
+        <!-- <a class="navbar-brand ms-5" href="#">Navbar</a> -->
+        <img src="{% static 'Logo.jpg' %}" alt="Logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link mx-3" aria-current="page" href="#">Home</a>
+              <a class="nav-link mx-3 fs-5" aria-current="page" href="{% url 'articles:index' %}">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link me-3" href="#">User</a>
-            </li>
+            <!-- <li class="nav-item"> <a class="nav-link me-3" href="#">User</a> </li> -->
           </ul>
-          <!-- 로그인 => Username 출력 -->
-          <li class="nav-item">
-            <span class="text-light">Hello,</span>
-            <a class="navbar-brand nav-link mx-3" aria-current="page" href="#">username</a>
-            <a class="nav-link me-3 text-light" href="#">Sign Out</a>
-          </li>
           <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-search me-5" type="submit">Search</button>
