@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
     'articles',
     'django_bootstrap5',
     'imagekit',
@@ -122,6 +123,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+# static 폴더 위치 설정
+STATICFILES_DIRS = [ 
+    BASE_DIR / "static",
+]
 
 # Media files (user uploaded files)
 
@@ -156,3 +161,6 @@ def get_secret(setting):
 
 
 SECRET_KEY = get_secret("SECRET_KEY")
+
+# User Model
+AUTH_USER_MODEL = 'accounts.User'
