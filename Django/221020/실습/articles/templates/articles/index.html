@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+  <div class="container">
+    <h1 class="text-center my-5 fw-bold fs-2">Daily Art</h1>
+    <a href="#" class="btn btn-primary">Add</a>
+    <div class="row row-cols-1 row-cols-md-4 g-5 mt-1">
+      <div class="col my-4">
+        <a class="text-decoration-none" href="#">
+          <div class="card h-100">
+            <img src="#" class="card-img-top" alt="#">
+            <div class="card-body">
+              <h5 class="card-title text-center">title</h5>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Title :
+              </li>
+              <li class="list-group-item">
+                hashTag
+              </li>
+            </ul>
+            <div class="card-footer">
+              <small class="text-muted">Last updated :
+              </small>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  {% endblock content %}
