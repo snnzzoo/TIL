@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% load static %}
+
+{% block content %}
+
+  <div class="container">
+    <div class="card shadow m-5">
+      <div class="card-header">
+        <p class="my-2 mx-3 fw-bold">{{ article.art_title }}
+        </p>
+      </div>
+      <div class="card-body">
+        <h2 class="text-center mt-2 mb-4 fw-bold">{{ article.title }}</h2>
+        <hr class="mb-2">
+        <div class="d-flex justify-content-between align-items-center mx-3">
+          <div>
+            <p class="my-auto">Writer :
+
+            </p>
+          </div>
+          <div class="text-end text-muted">
+            <p class="my-auto">Created :
+              {{ article.created_at|date:'Y-m-d H:i' }}
+            </p>
+            <p class="my-auto">
+              Updated :
+              {{ article.updated_at|date:'Y-m-d H:i' }}</p>
+          </div>
+        </div>
+        <hr class="mt-2">
+        <div class="my-4">
+          <img class="mb-3 align-item-center" src="{{ article.image.url }}" alt="{{ article.image }}"/>
+          <p class="fs-5 mb-5">{{ article.content }}</p>
+          <hr>
+          <p>한줄 감상평 :
+            {{ article.one_line }}</p>
+        </div>
+      </div>
+    </div>
+    <!-- Add a Comment -->
+
+    <!-- Comments -->
+
+    <div class="mx-5">
+      <a class="btn btn-outline-primary me-2" href="#" role="button">Edit</a>
+      <a class="btn btn-outline-secondary me-2" href="{% url 'articles:index' %}" role="button">Back</a>
+      <a class="btn btn-outline-danger" href="#" role="button">Delete</a>
+    </div>
+  </div>
+{% endblock content %}
