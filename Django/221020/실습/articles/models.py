@@ -21,7 +21,7 @@ class Article(models.Model):
     image = ProcessedImageField(upload_to='images/', blank=True,
                                 processors=[ResizeToFill(960, 540)],
                                 format='JPEG',
-                                options={'quality': 80})
+                                options={'quality': 100})
     one_line = models.CharField(max_length=30)
     thumbnail = ImageSpecField(source='image', 
                                 processors=[ResizeToFill(120,80)], 

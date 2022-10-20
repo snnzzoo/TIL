@@ -1,19 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
   <div class="container">
-    <h1 class="text-center my-5 fw-bold fs-2">Daily Art</h1>
+    <h1 class="text-center my-5 fw-bold fs-2">Art Diary</h1>
     <a href="{% url 'articles:create' %}" class="btn btn-primary">Add</a>
     <div class="row row-cols-1 row-cols-md-4 g-5 mt-1">
       {% for article in articles %}
         <div class="col my-4">
           <a class="text-decoration-none" href="{% url 'articles:detail' article.pk %}">
             <div class="card h-100">
-              <img src="#" class="card-img-top" alt="#">
+              <img src="{{ article.thumbnail.url }}" class="card-img-top" alt="{{ article.thumbnail }}">
               <div class="card-body">
-                <h5 class="card-title text-center">title</h5>
+                <h5 class="card-title text-center">{{ article.title }}</h5>
               </div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">Title :
+                <li class="list-group-item">{{ article.art_title }}
                 </li>
                 <li class="list-group-item">
                   hashTag
@@ -21,6 +21,7 @@
               </ul>
               <div class="card-footer">
                 <small class="text-muted">Last updated :
+                  {{ article.updated_at }}
                 </small>
               </div>
             </div>

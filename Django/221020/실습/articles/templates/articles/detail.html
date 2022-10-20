@@ -30,7 +30,9 @@
         </div>
         <hr class="mt-2">
         <div class="my-4">
-          <img class="mb-3 align-item-center" src="{{ article.image.url }}" alt="{{ article.image }}"/>
+          <div class="text-center">
+            <img class="mb-3" src="{{ article.image.url }}" alt="{{ article.image }}"/>
+          </div>
           <p class="fs-5 mb-5">{{ article.content }}</p>
           <hr>
           <p>한줄 감상평 :
@@ -45,7 +47,7 @@
     <div class="mx-5">
       <a class="btn btn-outline-primary me-2" href="#" role="button">Edit</a>
       <a class="btn btn-outline-secondary me-2" href="{% url 'articles:index' %}" role="button">Back</a>
-      <a class="btn btn-outline-danger" href="#" role="button">Delete</a>
+      <a class="btn btn-outline-danger" href="{% url 'articles:delete' article.pk %}" role="button">Delete</a>
     </div>
   </div>
 {% endblock content %}
