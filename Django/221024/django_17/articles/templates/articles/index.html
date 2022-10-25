@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="text-center">
+    <h1>🙋‍♂️ 질문 게시판</h1>
+    {% if request.user.is_authenticated %}
+      <a class="btn btn-primary my-3 float-right" href="{% url 'articles:create' %}">질문하기</a>
+    {% endif %}
+  </div>
+
+  <div class="row">
+    {% for article in articles %}
+      <div class="col-4 my-3">
+        <div class="card">
+          {% if article.image %}
+            <img src="{{ article.image.url }}" class="card-img-top" alt="...">
+          {% else %}
+            <img src="https://dummyimage.com/1200x960/000000/c4c4c4" class="card-img-top">
+          {% endif %}
+          <div class="card-body">
+            <h5 class="card-title text-center">{{ article.title }}</h5>
+            <p class="text-end">
+              <a href="{% url 'accounts:detail' article.user.pk %}" class="text-decoration-none text-muted">{{ article.user.username }}</a>
+            </p>
+            <a href="{% url 'articles:detail' article.pk %}" class="btn btn-outline-primary my-3">글 보기</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
