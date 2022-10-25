@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+
+<!-- https://pypi.org/project/django-bootstrap5/ -->
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+{% endblock %}
+{% block body %}
+  <h1>게시판</h1>
+  <img src="" alt=""/>
+  <button>
+    <a href="{% url 'articles:create' %}">New</a>
+  </button>
+  {% for article in articles %}
+    <h3>
+      <a href="{% url 'articles:detail' %}">{{ article.title }}</a>
+    </h3>
+    <p>{{ article.created_at }}
+      |
+      {{ article.updated_at }}</p>
+    <hr/>
+  {% endfor %}
+{% endblock %}

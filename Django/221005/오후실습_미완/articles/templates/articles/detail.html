@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% block css %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+{% endblock %}
+{% block body %}
+  <h1>{{ article.pk }}번 게시글</h1>
+  <p>{{ article.created_at }}
+    |
+    {{ article.updated_at }}</p>
+  <p>{{ article.content }}</p>
+  <a href="">Edit</a>
+{% endblock %}
