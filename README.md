@@ -196,12 +196,12 @@
 
 #### 📓 10월 1주차
 
-| Date  | TIL  |
-| :---: | :--: |
-| 10.04 |      |
-| 10.05 |      |
-| 10.06 |      |
-| 10.07 |      |
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 10.04 | [Django ModelForm](https://github.com/snnzzoo/TIL/tree/master/Django/221004) |
+| 10.05 | [Admin site & Static files](https://github.com/snnzzoo/TIL/tree/master/Django/221005) |
+| 10.06 | [ModelForm & Staticfiles를 활용한 영화 정보 제공 서비스 실습](https://github.com/snnzzoo/TIL/tree/master/Django/221006) |
+| 10.07 | [Pair Programming - 영화 리뷰 커뮤니티 서비스](https://github.com/snnzzoo/01-Pair-02) |
 
 
 
@@ -212,7 +212,7 @@
 | 10.11 | [Django Auth](https://github.com/snnzzoo/TIL/tree/master/Django/221011) |
 | 10.12 | [로그인](https://github.com/snnzzoo/TIL/tree/master/Django/221012) |
 | 10.13 | [회원정보 수정](https://github.com/snnzzoo/TIL/tree/master/Django/221013) |
-| 10.14 |                                                              |
+| 10.14 |        [실습](https://github.com/snnzzoo/01-Pair-03)         |
 
 
 
@@ -222,6 +222,18 @@
 | :---: | :----------------------------------------------------------: |
 | 10.17 | [이미지 업로드](https://github.com/snnzzoo/TIL/tree/master/Django/221017) |
 | 10.18 | [Comment (1:N)](https://github.com/snnzzoo/TIL/tree/master/Django/221018) |
-| 10.19 |                                                              |
-| 10.20 |                                                              |
-| 10.21 |                                                              |
+| 10.19 | [1:N (User - Comment)](https://github.com/snnzzoo/TIL/tree/master/Django/221019) |
+| 10.20 | [실습](https://github.com/snnzzoo/TIL/tree/master/Django/221020/%EC%8B%A4%EC%8A%B5) |
+| 10.21 |           [Pair Programming - 영화 리뷰 커뮤니티]            |
+
+
+
+#### 📓 10월 4주차
+
+| Date  |                             TIL                              |
+| :---: | :----------------------------------------------------------: |
+| 10.24 | [Many to Many Relationship & Likes](https://github.com/snnzzoo/TIL/tree/master/Django/221024) |
+| 10.25 | [M:N (User-User) & Follow](https://github.com/snnzzoo/TIL/tree/master/Django/221025) |
+| 10.26 |                                                              |
+| 10.27 |                                                              |
+| 10.28 |                                                              |
