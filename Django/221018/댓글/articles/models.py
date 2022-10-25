@@ -1,6 +1,8 @@
+from inspect import modulesbyfile
 from django.db import models
 from imagekit.processors import ResizeToFill
 from imagekit.models import ProcessedImageField, ImageSpecField
+from django.conf import settings
 
 # Create your models here.
 """
@@ -23,7 +25,7 @@ class Article(models.Model):
                                 processors=[ResizeToFill(240, 160)],
                                 format='JPEG',
                                 options={'quality': 100})
-
+    
 
 class Comment(models.Model):
     content = models.TextField()

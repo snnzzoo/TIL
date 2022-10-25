@@ -124,6 +124,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# static 폴더 위치 설정
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+]
+
 # Media files (user uploaded files)
 
 MEDIA_ROOT = BASE_DIR / 'images'

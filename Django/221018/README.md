@@ -800,3 +800,8 @@ def comments_create(request, pk):
 - 새로운 게시글을 작성하거나 모든 댓글을 삭제 후 확인
 
   ![image-20221018171056347](C:\Users\임선주\Desktop\TIL\Django\221018\README.assets\image-20221018171056347.png)
+
+
+
+
+
