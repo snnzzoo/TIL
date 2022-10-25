@@ -699,14 +699,24 @@ update.html
 ### 5) 삭제하기
 
 > 특정한 글을 삭제한다.
-> http://127.0.0.1:8000/articles/<int:pk>/delete
+> http:<hi>//127.0.0.1:8000/articles/<int<hi>:pk>/delete
 
 
 
 urls.py
 
 ```python
+# articles/urls.py
 
+from django.urls import path
+from . import views
+
+app_name = 'articles'
+
+urlpatterns = [
+    ...
+    path('<int:pk>/delete/', views.delete, name="delete"),
+]
 ```
 
 
@@ -714,7 +724,32 @@ urls.py
 views.py
 
 ```python
+# articles/views.py
 
+def delete(request, pk):
+    Article.objects.get(pk=pk).delete()
+    return redirect('articles:index')
+```
+
+
+
+detail.html
+
+```django
+<!-- articles/detail.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>{{ article.pk }}번 게시글</h1>
+<h3>{{ article.title }}</h3>
+<p>{{ article.created_at }} | {{ article.updated_at }}</p>
+<p>{{ article.content }}</p>
+<a href="{% url 'articles:update' article.pk %}">수정하기</a>
+<a href="{% url 'articles:delete' article.pk %}">삭제하기</a>
+
+{% endblock %}
 ```
 
 
