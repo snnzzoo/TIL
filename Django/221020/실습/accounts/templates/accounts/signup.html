@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+
+{% block content %}
+
+  <div class="container d-flex justify-content-center my-5">
+    <div class="card col-8 bg-light">
+      <h1 class="text-center my-4 fs-3 fw-bold">Sign UP</h1>
+      <div class="card-body">
+        <form action="" method="POST">
+          {% csrf_token %}
+          {% bootstrap_form form %}
+          <div class="mt-4">
+            <button class="btn btn-primary me-2" type="submit">JOIN</button>
+            <a class=" btn btn-outline-secondary" href="#" role="button">Back</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}
