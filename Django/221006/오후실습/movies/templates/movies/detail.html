@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{% block body %}
+  <h1>detail.html</h1>
+  <p>{{ movie.pk }}번 게시글</p>
+  <h2>{{ movie.title }}</h2>
+  <p>최종 수정 날짜 :
+    {{ movie.updated_at }}
+    | 최초 등록 날짜 :
+    {{ movie.created_at }}</p>
+  <hr>
+  <p>{{ movie.summary }}</p>
+  <hr>
+  <a class="btn btn-primary" href="{% url 'movies:update' movie.pk %}" role="button">Edit</a>
+  <a class="btn btn-danger" href="{% url 'movies:delete' movie.pk %}" role="button">Delete</a>
+
+{% endblock body %}

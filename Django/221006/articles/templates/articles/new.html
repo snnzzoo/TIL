@@ -1,0 +1,15 @@
+{% comment %} {% extends 'base.html' %}
+{% block body %} {% endcomment %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+<h1>New Post</h1>
+  <form action="{% url 'articles:create' %}" method="POST">
+    {% csrf_token %}
+    {% bootstrap_form article_form %}
+    {% comment %} {{ article_form.as_p }} {% endcomment %}
+    {% comment %} <input type="submit" value="add"> {% endcomment %}
+    {% bootstrap_button button_type="submit" content="add" %}
+  </form>
+
+{% comment %} {% endblock body %} {% endcomment %}

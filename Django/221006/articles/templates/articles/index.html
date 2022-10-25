@@ -1,0 +1,23 @@
+{% comment %} {% extends 'base.html' %}
+{% block body %} {% endcomment %}
+{% load static %}
+{% load django_bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+  <h1>안녕 index.html</h1>
+  <img src="{% static 'MOMA.jpg' %}" alt="Claude Monet">
+  <a href="{% url 'articles:create' %}">New</a>
+  {% for article in articles %}
+    <h3>
+      <a href="{% url 'articles:detail' article.pk %}">
+        {{ article.title }}
+      </a>
+    </h3>
+    <p>{{ article.created_at|date }}
+      |
+      {{ article.updated_at }}</p>
+    <hr>
+  {% endfor %}
+
+{% comment %} {% endblock body %} {% endcomment %}
