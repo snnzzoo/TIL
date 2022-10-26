@@ -77,7 +77,7 @@ def likes(request, pk):
     article = Article.objects.get(pk=pk)
     # 이미 좋아요를 눌렀다면?
     if article.like_users.filter(pk=request.user.pk).exists():
-    # if request.user is in article.like_users.all():
+    # if request.user in article.like_users.all():
         article.like_users.remove(request.user)
     else:
         article.like_users.add(request.user)
