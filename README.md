@@ -234,6 +234,6 @@
 | :---: | :----------------------------------------------------------: |
 | 10.24 | [Many to Many Relationship & Likes](https://github.com/snnzzoo/TIL/tree/master/Django/221024) |
 | 10.25 | [M:N (User-User) & Follow](https://github.com/snnzzoo/TIL/tree/master/Django/221025) |
-| 10.26 |                                                              |
+| 10.26 | [비동기 처리](https://github.com/snnzzoo/TIL/tree/master/Django/221026) |
 | 10.27 |                                                              |
 | 10.28 |                                                              |
